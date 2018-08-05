@@ -1,10 +1,105 @@
-header
+// container
 
-	// container
+main.scrum-view.container
 
-	.container
+	// sidebar
 
-		// title page
+	sidebar.column
 
-		h1.title-page
-			| UI TaskTracker
+		// title column
+
+		h4.column__title
+			| Панель пользователя
+
+		a.column__user-name(href="#" title="")
+			| Кузьмин Виталий Сергеевич
+
+		a.column__user-exit(href="#" title="")
+			| Завершить сеанс
+
+	// column
+
+	.column.func-plan
+
+		// title column
+
+		h4.column__title
+			| План
+
+		// body
+
+		ul.column__body
+
+			// task card
+
+			li.column__body__task
+				p.column__body__task__priority-title
+					| Приоритет: 
+					span.normal
+						| нормальный
+				.column__body__task__date
+					| Дата: 05.08.18
+				p.column__body__task__title
+					| Изучить ТЗ по UI Task Tracker для SimbirSoft
+
+			// task card
+
+			li.column__body__task
+				p.column__body__task__priority-title
+					| Приоритет: 
+					span.hard
+						| высокий
+				.column__body__task__date
+					| Дата: 05.08.18
+				p.column__body__task__title
+					| Создать репозиторий верстки на своем github			
+
+	// column
+
+	.column.func-process
+
+		// title column
+
+		h4.column__title
+			| В процессе
+
+		// body
+
+		ul.column__body
+
+			// task card
+
+			li.column__body__task
+				p.column__body__task__priority-title
+					| Приоритет: 
+					span.hard
+						| высокий
+				.column__body__task__date
+					| Дата: 07.08.18
+				p.column__body__task__title
+					| Разработать верстку UI Task Tracker для SimbirSoft
+
+	// column
+
+	.column.func-done
+
+		// title column
+
+		h4.column__title
+			| Готово
+
+		// body
+
+		ul.column__body
+
+			// task card
+
+			li.column__body__task
+				//p.column__body__task__priority-title
+					| Приоритет: 
+					span.hard
+						| высокий
+				.column__body__task__date
+					| Дата: 07.08.18
+				p.column__body__task__title
+					| Разработать верстку UI Task Tracker для SimbirSoft

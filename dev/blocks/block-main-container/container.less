@@ -1,16 +1,74 @@
-// header
+// main container
 
-header {
+main, .scrum-view {
+    padding: 20px;
+    display: grid;
+    //width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    //grid-template-rows: repeat(4, 1fr);
+    grid-gap: 1em;
+    //justify-content: start;
+}
+
+// column
+
+.column {
     padding: 10px;
-    background: @blue;
+    background: @white;
 }
 
-body {
-    background: #f4f4f4;
+.column__title {
+    font: 16px 'open_sansregular';
+    color: @black-dark;
+    padding: 0 0 0 10px;
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
 }
 
-.title-page {
-    color: @white;
-    
-    font: 16px 'open_sansbold';
+ul.column__body {
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+
+}
+
+.column__body__task {
+    margin: 10px;
+    padding: 10px;
+
+    border-radius: 4px;
+    border: 1px dashed #f0f0f0;
+
+    p {
+        margin: 0;
+        padding: 0;
+        display: block;
+
+        font: 14px 'open_sansregular';
+        color: @black-dark;
+    }
+
+    &:hover, &:focus {
+        border-color: @blue-light;
+    }
+
+}
+
+.column__body__task__priority-title,
+.column__body__task__date {
+    width: auto;
+    font: 12px 'open_sansregular' !important;
+    margin-bottom: 10px;
+}
+
+.column__body__task__title {
+    font: 16px 'open_sansregular';
+    float: none !important;
+    width: auto !important;
 }
