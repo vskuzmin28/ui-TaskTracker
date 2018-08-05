@@ -78,7 +78,6 @@ h3 {
 .auth-form form {
   margin: auto;
   margin-bottom: 20px;
-  margin-top: 20px;
   width: 200px;
   height: auto;
   display: grid;
@@ -90,6 +89,15 @@ h3 {
 }
 .auth-form form button {
   padding: 10px;
+}
+.auth-form a,
+.auth-form a:hover {
+  display: block;
+  font: 12px 'open_sansregular';
+  text-decoration: underline;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
 }
 header {
   padding: 10px;
