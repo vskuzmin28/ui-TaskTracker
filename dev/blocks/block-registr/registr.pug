@@ -1,5 +1,25 @@
-header
+.block-registr
 
 	// container
 
 	.container
+		
+		.registr-form
+
+			h2
+				| Регистрация нового сотрудника <br/> в UI Task Tracker
+
+			form(action="/" method="post")
+				input(name="" type="text" placeholder="Логин")
+				input(name="" type="password" placeholder="Пароль")
+
+				input(name="" type="text" placeholder="E-mail")
+
+				input(name="" type="text" placeholder="ФИО")
+				input(name="" type="text" placeholder="Должность")
+				input(name="" type="text" placeholder="Рабочий телефон")
+
+				button.btn-orange
+					| Регистрация
+
+			img(src='../img/logo-white.png' alt="@@")
