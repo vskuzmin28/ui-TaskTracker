@@ -1,0 +1,21 @@
+.block-authorization
+
+	// container
+
+	.container
+		
+		.auth-form
+
+			h2
+				| Добро пожаловать в UI TASK TRACKER
+		
+			h3
+				| Введите логин/пароль для просмотра своих задач
+
+			form(action="/" method="post")
+				input(name="" type="text" placeholder="Логин")
+				input(name="" type="password" placeholder="Пароль")
+				button.btn-orange
+					| Войти
+
+			img(src='../img/logo-white.png' alt="@@")

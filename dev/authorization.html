@@ -2,18 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <!--meta(name='viewport', content='width=device-width, initial-scale=1')-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#000000">
-    <title>ui-taskTracker</title>
+    <title>Страница авторизации</title>
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/style.css">
   </head>
   <body>
-    <!-- header-->
-    <header>
+    <!-- authorization-->
+    <div class="block-authorization">
       <!-- container-->
-      <div class="container"></div>
-    </header>
-    <!-- / header-->
+      <div class="container">
+        <div class="auth-form">
+          <h2>Добро пожаловать в UI TASK TRACKER</h2>
+          <h3>Введите логин/пароль для просмотра своих задач</h3>
+          <form action="/" method="post">
+            <input name="" type="text" placeholder="Логин">
+            <input name="" type="password" placeholder="Пароль">
+            <button class="btn-orange">Войти</button>
+          </form><img src="../img/logo-white.png" alt="@@">
+        </div>
+      </div>
+    </div>
+    <!-- / authorization-->
   </body>
 </html>

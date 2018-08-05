@@ -21,8 +21,83 @@ ul {
   margin: 0 auto;
   max-width: 1200px;
 }
+input[type=text],
+input[type=password] {
+  padding: 10px;
+  background: #fff;
+  border-radius: 4px;
+  border: 0;
+  outline: 0;
+  border: 1px solid #0054b3;
+  font: 14px 'open_sansregular';
+  color: #000;
+}
+h2 {
+  font: 16px 'open_sansregular';
+  color: #222222;
+}
+h3 {
+  font: 14px 'open_sansregular';
+  color: #222222;
+}
+.btn-orange {
+  background: #f48826;
+  border: 0;
+  border-radius: 4px;
+  font: 12px 'open_sansbold';
+  color: #fff;
+  text-transform: uppercase;
+}
+.btn-orange:hover,
+.btn-orange:focus {
+  background: #fb9539;
+}
+.block-authorization {
+  width: 100%;
+  height: 100vh;
+  background: #004a9d;
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.auth-form {
+  max-width: 400px;
+}
+.auth-form h2,
+.auth-form h3 {
+  color: #fff;
+  text-align: center;
+}
+.auth-form img {
+  display: block;
+  margin: auto;
+  width: 140px;
+  height: 30px;
+}
+.auth-form form {
+  margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 200px;
+  height: auto;
+  display: grid;
+}
+.auth-form form input {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+.auth-form form button {
+  padding: 10px;
+}
 header {
-  padding: auto;
+  padding: 10px;
+  background: #004a9d;
+}
+header {
+  padding: 10px;
+  background: #004a9d;
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
