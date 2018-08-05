@@ -52,6 +52,11 @@ h3 {
 .btn-orange:focus {
   background: #fb9539;
 }
+.logo {
+  display: block;
+  width: 140px;
+  height: 30px;
+}
 .block-authorization {
   width: 100%;
   height: 100vh;
@@ -108,9 +113,36 @@ h3 {
   color: #fff;
   margin-bottom: 20px;
 }
+footer {
+  padding: 10px;
+  background: #272727;
+}
+.footer__logo {
+  margin: 0 auto;
+  width: auto;
+  height: 20px;
+}
 header {
   padding: 10px;
   background: #004a9d;
+}
+body {
+  background: #f4f4f4;
+}
+.title-page {
+  color: #fff;
+  font: 16px 'open_sansbold';
+}
+header {
+  padding: 10px;
+  background: #004a9d;
+}
+body {
+  background: #f4f4f4;
+}
+.title-page {
+  color: #fff;
+  font: 16px 'open_sansbold';
 }
 .block-registr {
   width: 100%;
@@ -120,6 +152,17 @@ header {
   display: grid;
   justify-items: center;
   align-items: center;
+}
+header {
+  padding: 10px;
+  background: #004a9d;
+}
+body {
+  background: #f4f4f4;
+}
+.title-page {
+  color: #fff;
+  font: 16px 'open_sansbold';
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name
