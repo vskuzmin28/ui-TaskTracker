@@ -69,6 +69,17 @@ h3 {
 .column__user-exit {
   text-decoration: underline;
 }
+footer {
+  padding: 10px;
+  background: #272727;
+  display: grid;
+  align-items: end;
+}
+.footer__logo {
+  margin: 0 auto;
+  width: auto;
+  height: 20px;
+}
 .block-authorization {
   width: 100%;
   height: 100vh;
@@ -125,17 +136,6 @@ h3 {
   color: #fff;
   margin-bottom: 20px;
 }
-footer {
-  padding: 10px;
-  background: #272727;
-  display: grid;
-  align-items: end;
-}
-.footer__logo {
-  margin: 0 auto;
-  width: auto;
-  height: 20px;
-}
 header {
   width: auto;
   padding: 10px;
@@ -147,62 +147,6 @@ body {
 .title-page {
   color: #fff;
   font: 16px 'open_sansbold';
-}
-.block-registr {
-  width: 100%;
-  height: 100vh;
-  background: #004a9d;
-  overflow: hidden;
-  display: grid;
-  justify-items: center;
-  align-items: center;
-}
-.user-cols {
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-gap: 1em;
-}
-.user-panel {
-  margin-top: 20px;
-  padding: 20px;
-  height: auto;
-  background: #0054b3;
-  color: #fff !important;
-}
-.user-panel h1,
-.user-panel h2,
-.user-panel h3,
-.user-panel h4,
-.user-panel p,
-.user-panel a {
-  margin: 0;
-  padding: 0;
-  color: #fff;
-}
-.user-panel a,
-.user-panel a:hover {
-  width: auto;
-  display: block;
-  line-height: 28px;
-  font-size: 14px;
-}
-.user-panel__title {
-  height: auto;
-  padding-bottom: 10px !important;
-  margin-bottom: 6px !important;
-  border-bottom: 1px dashed #fff;
-}
-.user-panel__user-name {
-  text-decoration: none !important;
-}
-.user-settings {
-  margin-top: 20px;
-  padding: 20px;
-  background: #fff;
-}
-.user-settings p {
-  margin: 0;
-  padding: 0;
 }
 main,
 .scrum-view {
@@ -259,6 +203,88 @@ ul.column__body li {
   font: 16px 'open_sansregular';
   float: none !important;
   width: auto !important;
+}
+.block-registr {
+  width: 100%;
+  height: 100vh;
+  background: #004a9d;
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+.user-cols {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-gap: 1em;
+}
+.user-panel {
+  margin-top: 20px;
+  padding: 20px;
+  height: auto;
+  background: #0054b3;
+  color: #fff !important;
+}
+.user-panel h1,
+.user-panel h2,
+.user-panel h3,
+.user-panel h4,
+.user-panel p,
+.user-panel a {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.user-panel a,
+.user-panel a:hover,
+.user-panel p {
+  width: auto;
+  display: block;
+  line-height: 28px;
+  font-size: 14px;
+}
+.user-panel__title {
+  height: auto;
+  padding-bottom: 10px !important;
+  margin-bottom: 6px !important;
+  border-bottom: 1px dashed #fff;
+}
+.user-panel__user-name {
+  text-decoration: none !important;
+}
+.user-settings {
+  margin-top: 20px;
+  padding: 0 20px 20px 20px;
+  background: #fff;
+}
+.user-settings p {
+  margin: 0;
+  padding: 0;
+}
+.user-settings__title {
+  color: #000;
+  height: auto;
+  padding-bottom: 10px !important;
+  margin-bottom: 6px !important;
+  border-bottom: 1px dashed #000;
+}
+.user-settings__body {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+.user-settings__body__column {
+  padding: 20px;
+  width: auto;
+  background: #0054b3;
+  height: 100px;
+  border-radius: 4px;
+  color: #fff;
+}
+.user-settings__body__column h4 {
+  margin: 0;
+  padding: 0;
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name

@@ -26,11 +26,61 @@
         <!-- user panel-->
         <div class="user-panel">
           <!-- title column-->
-          <h4 class="user-panel__title">Панель пользователя</h4><a class="user-panel__user-name" href="#" title="">Кузьмин Виталий Сергеевич</a><a href="#" title="">Добавить задачу</a><a class="user-panel__user-exit" href="#" title="">Завершить сеанс</a>
+          <h4 class="user-panel__title">Панель пользователя</h4><a class="user-panel__user-name" href="#" title="">Кузьмин Виталий Сергеевич</a>
+          <p>Моб. номер: 8 917 827 9291</p>
+          <p>E-mail: vskuzmin28@gmail.com</p><a href="#" title="">Добавить задачу</a><a class="user-panel__user-exit" href="#" title="">Завершить сеанс</a>
         </div>
         <!-- user settings-->
         <div class="user-settings">
-          <p>333</p>
+          <h4 class="user-settings__title">Настройки</h4>
+          <div class="user-settings__body">
+            <!-- column-->
+            <div class="user-settings__body__column">
+              <h4>Вид</h4>
+              <form action="/" method="post">
+                <div class="checkbox">
+                  <input type="checkbox" value="None" id="checkboxBrief" name="check">
+                  <label for="checkboxBrief">Краткий</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" value="None" id="checkboxDetail" name="check">
+                  <label for="checkboxDetail">Подробный</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" value="None" id="checkboxScrum" name="check">
+                  <label for="checkboxScrum">Scrum доска</label>
+                </div>
+              </form>
+            </div>
+            <!-- column-->
+            <div class="user-settings__body__column">
+              <h4>Сортировка</h4>
+              <form action="/" method="post">
+                <div class="checkbox">
+                  <input type="checkbox" value="None" id="checkboxBrief" name="check">
+                  <label for="checkboxBrief">По статусу</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" value="None" id="checkboxDetail" name="check">
+                  <label for="checkboxDetail">По приоритету</label>
+                </div>
+              </form>
+            </div>
+            <!-- column-->
+            <div class="user-settings__body__column">
+              <h4>Автобновление</h4>
+              <form action="/" method="post">
+                <div class="checkbox">
+                  <input type="checkbox" value="None" id="checkboxBrief" name="check">
+                  <label for="checkboxBrief">5 сек</label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" value="None" id="checkboxDetail" name="check">
+                  <label for="checkboxDetail">10 сек			</label>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </sidebar>

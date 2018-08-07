@@ -18,6 +18,13 @@ sidebar
 			a.user-panel__user-name(href="#" title="")
 				| Кузьмин Виталий Сергеевич
 
+
+			p
+				| Моб. номер: 8 917 827 9291
+
+			p
+				| E-mail: vskuzmin28@gmail.com
+
 			a(href="#" title="")
 				| Добавить задачу
 
@@ -28,5 +35,69 @@ sidebar
 
 		.user-settings
 
-			p
-				| 333
+			h4.user-settings__title
+				| Настройки
+
+			.user-settings__body
+
+				// column
+
+				.user-settings__body__column
+
+					h4
+						| Вид
+
+					form(action="/" method="post")
+
+						.checkbox
+							input(type="checkbox" value="None" id="checkboxBrief" name="check")
+							label(for="checkboxBrief")
+								| Краткий
+
+						.checkbox
+							input(type="checkbox" value="None" id="checkboxDetail" name="check")
+							label(for="checkboxDetail")
+								| Подробный
+
+						.checkbox
+							input(type="checkbox" value="None" id="checkboxScrum" name="check")
+							label(for="checkboxScrum")
+								| Scrum доска
+
+				// column
+
+				.user-settings__body__column
+
+					h4
+						| Сортировка
+
+					form(action="/" method="post")
+
+						.checkbox
+							input(type="checkbox" value="None" id="checkboxBrief" name="check")
+							label(for="checkboxBrief")
+								| По статусу
+
+						.checkbox
+							input(type="checkbox" value="None" id="checkboxDetail" name="check")
+							label(for="checkboxDetail")
+								| По приоритету
+
+				// column
+
+				.user-settings__body__column
+
+					h4
+						| Автобновление
+
+					form(action="/" method="post")
+
+						.checkbox
+							input(type="checkbox" value="None" id="checkboxBrief" name="check")
+							label(for="checkboxBrief")
+								| 5 сек
+
+						.checkbox
+							input(type="checkbox" value="None" id="checkboxDetail" name="check")
+							label(for="checkboxDetail")
+								| 10 сек			

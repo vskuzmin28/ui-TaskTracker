@@ -24,7 +24,7 @@
         color: @white;
     }
 
-    a, a:hover {
+    a, a:hover, p {
         width: auto;
         display: block;
         line-height: 28px;
@@ -48,10 +48,41 @@
 
 .user-settings {
     margin-top: 20px;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
     background: @white;
 
     p {
+        margin: 0;
+        padding: 0;
+    }
+
+}
+
+.user-settings__title {
+    color: @black;
+    height: auto;
+    padding-bottom: 10px !important;
+    margin-bottom: 6px !important;
+    border-bottom: 1px dashed @black;
+}
+
+.user-settings__body {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+}
+
+.user-settings__body__column {
+    padding: 20px;
+    width: auto;
+    background: @blue-light;
+    height: 100px;
+    border-radius: 4px;
+
+    color: @white;
+
+    h4 {
         margin: 0;
         padding: 0;
     }
