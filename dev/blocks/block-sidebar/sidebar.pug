@@ -1,10 +1,32 @@
-header
+// sidebar
+
+sidebar
 
 	// container
 
-	.container
+	.user-cols.container
 
-		// title page
+		// user panel
 
-		h1.title-page
-			| UI TaskTracker
+		.user-panel
+
+			// title column
+
+			h4.user-panel__title
+				| Панель пользователя
+
+			a.user-panel__user-name(href="#" title="")
+				| Кузьмин Виталий Сергеевич
+
+			a(href="#" title="")
+				| Добавить задачу
+
+			a.user-panel__user-exit(href="#" title="")
+				| Завершить сеанс
+
+		// user settings
+
+		.user-settings
+
+			p
+				| 333

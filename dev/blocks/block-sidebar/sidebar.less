@@ -1,16 +1,59 @@
-// header
+// sidebar
 
-header {
-    padding: 10px;
-    background: @blue;
+.user-cols {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-gap: 1em;
 }
 
-body {
-    background: #f4f4f4;
+// user panel
+
+.user-panel {
+    margin-top: 20px;
+    padding: 20px;
+
+    height: auto;
+
+    background: @blue-light;
+
+    color: @white !important;
+
+    h1, h2, h3, h4, p, a {
+        margin: 0;
+        padding: 0;
+        color: @white;
+    }
+
+    a, a:hover {
+        width: auto;
+        display: block;
+        line-height: 28px;
+        font-size: 14px;
+    }
+
 }
 
-.title-page {
-    color: @white;
-    
-    font: 16px 'open_sansbold';
+.user-panel__title {
+    height: auto;
+    padding-bottom: 10px !important;
+    margin-bottom: 6px !important;
+    border-bottom: 1px dashed @white;
+}
+
+.user-panel__user-name {
+    text-decoration: none !important;
+}
+
+// user settings
+
+.user-settings {
+    margin-top: 20px;
+    padding: 20px;
+    background: @white;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
 }
