@@ -1,0 +1,24 @@
+// modal backgroud
+
+.modal-bg.modal__edit-task
+
+	// modal container
+
+	.modal
+
+		// button close
+
+		a.modal__close(href="#" title="")
+			img(src="../img/close.png" alt="@@")
+
+		// title
+
+		h2.modal__title
+			| Изменение задачи
+		
+		form(action="/" method="post")
+			input(type="text" name="" placeholder="Название")
+			input(type="text" name="" placeholder="Статус")
+			input(type="text" name="" placeholder="Приоритет")
+			textarea
+				| Описание
