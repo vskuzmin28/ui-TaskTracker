@@ -69,17 +69,6 @@ h3 {
 .column__user-exit {
   text-decoration: underline;
 }
-footer {
-  padding: 10px;
-  background: #272727;
-  display: grid;
-  align-items: end;
-}
-.footer__logo {
-  margin: 0 auto;
-  width: auto;
-  height: 20px;
-}
 .block-authorization {
   width: 100%;
   height: 100vh;
@@ -136,6 +125,17 @@ footer {
   color: #fff;
   margin-bottom: 20px;
 }
+footer {
+  padding: 10px;
+  background: #272727;
+  display: grid;
+  align-items: end;
+}
+.footer__logo {
+  margin: 0 auto;
+  width: auto;
+  height: 20px;
+}
 header {
   width: auto;
   padding: 10px;
@@ -148,6 +148,15 @@ body {
   color: #fff;
   font: 16px 'open_sansbold';
 }
+.block-registr {
+  width: 100%;
+  height: 100vh;
+  background: #004a9d;
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
 main,
 .scrum-view {
   padding: 20px;
@@ -159,6 +168,7 @@ main,
 .column {
   padding: 10px;
   background: #fff;
+  height: auto;
 }
 .column__title {
   font: 16px 'open_sansregular';
@@ -204,14 +214,22 @@ ul.column__body li {
   float: none !important;
   width: auto !important;
 }
-.block-registr {
-  width: 100%;
-  height: 100vh;
-  background: #004a9d;
-  overflow: hidden;
-  display: grid;
-  justify-items: center;
-  align-items: center;
+.column__body__task ul {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.column__body__task ul li a,
+.column__body__task ul li a:hover {
+  display: block;
+  float: left;
+  margin-right: 16px;
+  font: 12px 'open_sansregular';
+  color: #000;
+  text-decoration: underline;
+}
+.column__body__task ul li a:hover,
+.column__body__task ul li a:hover:hover {
+  color: #f48826;
 }
 .user-cols {
   display: grid;
@@ -285,6 +303,7 @@ ul.column__body li {
 .user-settings__body__column h4 {
   margin: 0;
   padding: 0;
+  margin-bottom: 14px;
 }
 /*
 LESS variables are information about icon's compiled state, stored under its original file name

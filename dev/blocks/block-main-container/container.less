@@ -17,6 +17,7 @@ main, .scrum-view {
 .column {
     padding: 10px;
     background: @white;
+    height: auto;
 }
 
 .column__title {
@@ -72,4 +73,31 @@ ul.column__body {
     font: 16px 'open_sansregular';
     float: none !important;
     width: auto !important;
+}
+
+.column__body__task {
+    ul {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        //position: absolute;
+        //width: 200px;
+        //height: 14px;
+        //background: red;
+
+        li a, li a:hover {
+            display: block;
+            float: left;
+            margin-right: 16px;
+
+            font: 12px 'open_sansregular';
+            color: @black;
+            text-decoration: underline;
+
+            &:hover {
+                color: @orange;
+            }
+
+        }
+
+    }
 }
