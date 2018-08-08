@@ -1,6 +1,8 @@
 // main container
 
-main, .scrum-view {
+// SCRUM VIEW
+
+.scrum-view {
     padding: 0px 20px 20px 20px;
     display: grid;
     //width: 100%;
@@ -10,6 +12,11 @@ main, .scrum-view {
     //grid-template-rows: repeat(3, 1fr);
     grid-gap: 1em;
     //justify-content: start;
+
+    .column__body__task__description {
+        display: none;
+    }
+
 }
 
 // column
@@ -100,4 +107,38 @@ ul.column__body {
         }
 
     }
+}
+
+.brief-view {
+    padding: 0px 20px 20px 20px;
+    display: grid;
+    //width: 100%;
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    //grid-template-rows: repeat(4, 1fr);
+    //grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+    //justify-content: start;
+
+    .column__body__task__description {
+        display: none;
+    }
+
+}
+
+.detail-view {
+    padding: 0px 20px 20px 20px;
+    display: grid;
+    //width: 100%;
+    height: auto;
+    grid-template-columns: repeat(1, 1fr);
+    //grid-template-rows: repeat(4, 1fr);
+    //grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+    //justify-content: start;
+
+    .column__body__task__description {
+        display: block;
+    }
+
 }
